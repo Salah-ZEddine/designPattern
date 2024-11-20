@@ -1,16 +1,14 @@
 package emi.conception.abstractfactory;
 
 public abstract class Company {
-    public Gpu assembleGpu() {
+    public void assembleGpu() {
         Gpu gpu = createGpu();
         gpu.assemble();
-        return gpu;
     }
 
-    public Monitor assembleMonitor() {
+    public void assembleMonitor() {
         Monitor monitor = createMonitor();
         monitor.assemble();
-        return monitor;
     }
 
 

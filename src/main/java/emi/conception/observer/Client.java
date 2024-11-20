@@ -8,6 +8,6 @@ public class Client {
         store.addSubscriber(gui);
         store.addSubscriber(text);
         store.notifyObserver();
-        store.update("nouveau marché");
+        store.renomer("nouveau marché");
     }
 }

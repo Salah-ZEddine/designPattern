@@ -1,7 +1,7 @@
 package emi.conception.builder;
 
 public class CarBuilder implements Builder {
-    private Car car;
+    private final Car car;
     public CarBuilder() {
         car = new Car();
     }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Store {
     private String data;
-    private List<Observer> observers = new ArrayList<>();
+    private final List<Observer> observers = new ArrayList<>();
     public Store(String data) {
         this.data = data;
     }
@@ -16,7 +16,7 @@ public class Store {
     public void removeSubscriber(Observer observer){
         observers.remove(observer);
     }
-    public void update(String data){
+    public void renomer(String data){
         this.data = data;
         notifyObserver();
     }
